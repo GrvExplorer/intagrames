@@ -25,8 +25,6 @@ export const multiFormatDateString = (timestamp: string = ""): string => {
   const diffInDays: number = diffInHours / 24;
 
   switch (true) {
-    case Math.floor(diffInDays) >= 30:
-      return formatDateString(timestamp);
     case Math.floor(diffInDays) === 1:
       return `${Math.floor(diffInDays)} day ago`;
     case Math.floor(diffInDays) > 1 && diffInDays < 30:

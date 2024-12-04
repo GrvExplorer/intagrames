@@ -1,14 +1,10 @@
-import { useToast } from "@/components/ui/use-toast";
-import { INewPost, INewUser, IUpdatePost, updatePostProp } from "@/types";
+import { INewPost, INewUser, IUpdatePost } from "@/types";
 import {
   // useInfiniteQuery,
   useMutation,
-  useQueries,
   useQuery,
   useQueryClient,
 } from "@tanstack/react-query";
-import { Models } from "appwrite";
-import { string } from "zod";
 import {
   createPost,
   createUserAccount,
@@ -97,8 +93,8 @@ export const useGetRecentPosts = () => {
 export const useGetPopularPosts = () => {
   return useQuery({
     queryKey: [QUERY_KEYS.GET_POPULAR_POSTS],
-    queryFn: getPopularPosts
-  })
+    queryFn: getPopularPosts,
+  });
 };
 export const useSetPostLikes = () => {
   return useMutation({
@@ -106,7 +102,7 @@ export const useSetPostLikes = () => {
       postId,
       likesArray,
     }: {
-      postId: string;
+      postId: string | undefined;
       likesArray: string[];
     }) => setPostLikes(postId, likesArray),
   });
@@ -135,9 +131,7 @@ export const useUpdatePost = () => {
   });
 };
 
-export function useGetPostById(postId: string) {
-  const cache = useQueryClient();
-
+export function useGetPostById(postId: string | undefined) {
   return useQuery({
     queryKey: [QUERY_KEYS.GET_POST_BY_ID, postId],
     queryFn: () => getPostById(postId),
@@ -147,6 +141,7 @@ export function useGetPostById(postId: string) {
 
 export const useDeletePost = () => {
   return useMutation({
+    // @ts-expect-error Object literal may only specify known properties, and mutationFn does not exist in type
     mutationFn: (postId: string | undefined, postImageId: string) =>
       deletePost(postId, postImageId),
   });

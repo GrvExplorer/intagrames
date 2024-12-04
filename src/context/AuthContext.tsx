@@ -70,7 +70,7 @@ export const AuthContextProvider = ({
       // if (cookieFallback === "[]" || cookieFallback === undefined) {
       //   navigate("/sign-in");
       // }
-      const res = await checkAuthUser();
+      await checkAuthUser();
       
     };
     checkAuth();

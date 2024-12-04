@@ -90,7 +90,7 @@ function FormController({
     } catch (error) {
       console.log(error);
       toast({
-        title: `${error?.message}`,
+        title: `${error}`,
         description:
           "This may due to file extension allowed type is .png, .svg, .jpg, .jpge",
         variant: "destructive",

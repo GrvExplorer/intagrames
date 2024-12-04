@@ -1,9 +1,8 @@
 import { Models } from 'appwrite';
-import React from 'react'
 import UserCard from './UserCard/UserCard';
 
 type UserCardProp = {
-  users: Models.DocumentList<Models.Document>
+  users: Models.DocumentList<Models.Document> | undefined
 }
 
 function UserCards({users}: UserCardProp) {

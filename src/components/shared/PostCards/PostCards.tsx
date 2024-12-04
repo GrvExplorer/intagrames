@@ -1,9 +1,8 @@
 import { Models } from "appwrite";
-import React from "react";
 import PostCard from "./PostCard/PostCard";
 
 type PostCardProps = {
-  posts: Models.DocumentList<Models.Document>;
+  posts: Models.DocumentList<Models.Document> | undefined;
 };
 
 function PostCards({ posts }: PostCardProps) {

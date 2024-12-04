@@ -1,7 +1,5 @@
 import { useUserContext } from "@/context/AuthContext";
-import { setDeletePostSaves } from "@/lib/appwrite/api";
 import {
-  useGetCurrentUser,
   useSetDeletePostSaves,
   useSetPostLikes,
   useSetPostSaves,
@@ -9,7 +7,6 @@ import {
 import { checkLiked } from "@/lib/utils";
 import { useQueryClient } from "@tanstack/react-query";
 import { Models } from "appwrite";
-import { Loader } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 type PostStatsProp = {
@@ -55,10 +52,15 @@ function PostStats({ post, userId }: PostStatsProp) {
     setPostLike({ postId: post?.$id, likesArray });
   }
 
-  
+
+
 
   async function  handlePostSave(e: React.MouseEvent<HTMLImageElement, MouseEvent>) {
     e.stopPropagation();
+    if (post === undefined) {
+      console.log("Post Id required!");
+      return;
+    }
 
     if (saveArray.includes(userId)) {
       setDeletePostSave(post.$id)

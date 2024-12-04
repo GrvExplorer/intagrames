@@ -1,6 +1,5 @@
-import { useToast } from "@/components/ui/use-toast";
-import { INewPost, INewUser, IUpdatePost, updatePostProp } from "@/types";
-import { ID, Models, Query } from "appwrite";
+import { INewPost, INewUser, IUpdatePost } from "@/types";
+import { ID, Query } from "appwrite";
 import { account, appwriteConfig, avatars, databases, storage } from "./config";
 
 export async function saveUserToDB(user: {
@@ -166,8 +165,13 @@ export async function getUserPosts(userId: string) {
   }
 }
 
-export async function getPostById(postId: string) {
+export async function getPostById(postId: string | undefined) {
   try {
+    if (postId === undefined) {
+      console.log("Post Id required!");
+      return;
+    }
+
     const post = await databases.getDocument(
       appwriteConfig.databaseId,
       appwriteConfig.postCollectionId,
@@ -274,10 +278,9 @@ export async function getRecentPosts() {
 
 export async function updatePost(post: IUpdatePost) {
   try {
+    const fileImageChange = post.file.length > 0;
 
-    const fileImageChange = post.file.length > 0
-
-    let image = {
+    const image = {
       imageUrl: post.imageUrl,
       imageId: post.imageId,
     };
@@ -289,9 +292,8 @@ export async function updatePost(post: IUpdatePost) {
       const fileUrl = await getFilePreview(uploadedFile.$id);
       if (!fileUrl) throw Error;
 
-      image.imageId = uploadedFile.$id
-      image.imageUrl = fileUrl
-
+      image.imageId = uploadedFile.$id;
+      image.imageUrl = fileUrl;
     }
 
     const tags = post.tags?.replace(/ /g, "").split(",") || [];
@@ -305,7 +307,7 @@ export async function updatePost(post: IUpdatePost) {
         location: post.location,
         tags: tags,
         imageUrl: image.imageUrl,
-        imageId:  image.imageId,
+        imageId: image.imageId,
       },
     );
 
@@ -322,24 +324,30 @@ export async function updatePost(post: IUpdatePost) {
 }
 
 export async function getPopularPosts() {
-try {
-  const popular = await databases.listDocuments(
-    appwriteConfig.databaseId,
-    appwriteConfig.postCollectionId,
-  )
-
-  if (!popular) throw new Error
-
-  return popular;
-  
-} catch (error) {
-  console.log(error);
-}
-
-}
-
-export async function setPostLikes(postId: string, likesArray: string[]) {
   try {
+    const popular = await databases.listDocuments(
+      appwriteConfig.databaseId,
+      appwriteConfig.postCollectionId,
+    );
+
+    if (!popular) throw new Error();
+
+    return popular;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function setPostLikes(
+  postId: string | undefined,
+  likesArray: string[],
+) {
+  try {
+    if (postId === undefined) {
+      console.log("Post Id required!");
+      return;
+    }
+
     const setLike = await databases.updateDocument(
       appwriteConfig.databaseId,
       appwriteConfig.postCollectionId,
@@ -392,22 +400,30 @@ export async function setDeletePostSaves(postId: string) {
   }
 }
 
-export async function deletePost(postId: string | undefined, postImageId: string) {
+export async function deletePost(
+  postId: string | undefined,
+  postImageId: string,
+) {
   try {
+    if (postId === undefined) {
+      console.log("Post Id required!");
+      return;
+    }
 
-    const deletedPhoto = deleteFile(postImageId)
+    const deletedPhoto = deleteFile(postImageId);
 
-    if (!deletedPhoto) throw new Error("No able to delete the post due to photo");
+    if (!deletedPhoto)
+      throw new Error("No able to delete the post due to photo");
 
     const statusCode = await databases.deleteDocument(
       appwriteConfig.databaseId,
       appwriteConfig.postCollectionId,
       postId,
-    )
+    );
 
-    if (!statusCode) throw new Error
+    if (!statusCode) throw new Error();
 
-    return { status: 'Ok'};
+    return { status: "Ok" };
   } catch (error) {
     console.log(error);
   }

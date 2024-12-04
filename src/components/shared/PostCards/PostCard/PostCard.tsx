@@ -13,6 +13,12 @@ function PostCard({ post }: PostCardProps) {
   const { user } = useUserContext();
   const cache = useQueryClient()
 
+  if (post == undefined) {
+    console.log("Post is not defined"); 
+    return
+  }
+  
+
   return (
     <div className="post-card">
       <div className="flex-between">
