@@ -1,0 +1,293 @@
+{
+  "total": 1,
+  "documents": [
+      {
+          "caption": "Rerum vitae voluptat",
+          "tags": [
+              "Veroipsamsedullam"
+          ],
+          "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/65b90bcb132b0620aa8b/files/65c0d1e3c55f6075eee1/preview?width=2000&height=2000&gravity=top&quality=100&project=65b7e1bc1118048ae6a8",
+          "imageId": "65c0d1e3c55f6075eee1",
+          "location": "Dignissimos sint sus",
+          "$id": "65c0d1e4cbd9fe88b721",
+          "$createdAt": "2024-02-05T12:17:40.838+00:00",
+          "$updatedAt": "2024-02-05T12:18:51.778+00:00",
+          "$permissions": [
+              "read(\"user:65c0d16f601f9d692567\")",
+              "update(\"user:65c0d16f601f9d692567\")",
+              "delete(\"user:65c0d16f601f9d692567\")"
+          ],
+          "creator": {
+              "name": "Cain Carver",
+              "username": "Gaurav ",
+              "accountId": "65c0d16f601f9d692567",
+              "email": "vermajigaurav6+boxio@gmail.com",
+              "bio": null,
+              "imageId": null,
+              "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=Cain+Carver&project=65b7e1bc1118048ae6a8",
+              "$id": "65c0d17091a9ba2e0e7f",
+              "$createdAt": "2024-02-05T12:15:44.597+00:00",
+              "$updatedAt": "2024-02-05T12:15:44.597+00:00",
+              "$permissions": [],
+              "liked": [],
+              "save": [],
+              "$databaseId": "65b90c2224988deb2c25",
+              "$collectionId": "65b90c66cd384a42aa3a"
+          },
+          "likes": [],
+          "save": [],
+          "$databaseId": "65b90c2224988deb2c25",
+          "$collectionId": "65b90c39d32cd101d05e"
+      }
+  ]
+}
+
+
+// Posts
+{
+    "total": 1,
+    "documents": [
+        {
+            "caption": "Rerum vitae voluptat",
+            "tags": [
+                "Veroipsamsedullam"
+            ],
+            "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/65b90bcb132b0620aa8b/files/65c0d1e3c55f6075eee1/preview?width=2000&height=2000&gravity=top&quality=100&project=65b7e1bc1118048ae6a8",
+            "imageId": "65c0d1e3c55f6075eee1",
+            "location": "Dignissimos sint sus",
+            "$id": "65c0d1e4cbd9fe88b721",
+            "$createdAt": "2024-02-05T12:17:40.838+00:00",
+            "$updatedAt": "2024-02-05T12:18:51.778+00:00",
+            "$permissions": [
+                "read(\"user:65c0d16f601f9d692567\")",
+                "update(\"user:65c0d16f601f9d692567\")",
+                "delete(\"user:65c0d16f601f9d692567\")"
+            ],
+            "creator": {
+                "name": "Cain Carver",
+                "username": "Gaurav ",
+                "accountId": "65c0d16f601f9d692567",
+                "email": "vermajigaurav6+boxio@gmail.com",
+                "bio": null,
+                "imageId": null,
+                "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=Cain+Carver&project=65b7e1bc1118048ae6a8",
+                "$id": "65c0d17091a9ba2e0e7f",
+                "$createdAt": "2024-02-05T12:15:44.597+00:00",
+                "$updatedAt": "2024-02-05T12:15:44.597+00:00",
+                "$permissions": [],
+                "liked": [],
+                "save": [],
+                "$databaseId": "65b90c2224988deb2c25",
+                "$collectionId": "65b90c66cd384a42aa3a"
+            },
+            "likes": [],
+            "save": [],
+            "$databaseId": "65b90c2224988deb2c25",
+            "$collectionId": "65b90c39d32cd101d05e"
+        }
+    ]
+}
+
+// users
+{
+    "total": 4,
+    "documents": [
+        {
+            "name": "thapa ",
+            "username": "thapatech",
+            "accountId": "65d43eece127b6722e07",
+            "email": "bipoto2846@massefm.com",
+            "bio": null,
+            "imageId": null,
+            "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=thapa+&width=256&height=256&project=65b7e1bc1118048ae6a8",
+            "$id": "65d43eed6bdbed3b3de5",
+            "$createdAt": "2024-02-20T05:55:57.442+00:00",
+            "$updatedAt": "2024-02-20T05:55:57.442+00:00",
+            "$permissions": [],
+            "posts": [
+                {
+                    "caption": "Accusamus est est no",
+                    "tags": [
+                        "Ametnemoestidt"
+                    ],
+                    "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/65b90bcb132b0620aa8b/files/65e3f1b845efe7eebb60/preview?width=2000&height=2000&gravity=top&quality=100&project=65b7e1bc1118048ae6a8",
+                    "imageId": "65e3f1b845efe7eebb60",
+                    "location": "Dolores provident v",
+                    "$id": "65e3f1b91f6888be7f15",
+                    "$createdAt": "2024-03-03T03:42:49.131+00:00",
+                    "$updatedAt": "2024-03-03T03:43:45.229+00:00",
+                    "$permissions": [
+                        "read(\"user:65d43eece127b6722e07\")",
+                        "update(\"user:65d43eece127b6722e07\")",
+                        "delete(\"user:65d43eece127b6722e07\")"
+                    ],
+                    "likes": [
+                        {
+                            "name": "thapa ",
+                            "username": "thapatech",
+                            "accountId": "65d43eece127b6722e07",
+                            "email": "bipoto2846@massefm.com",
+                            "bio": null,
+                            "imageId": null,
+                            "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=thapa+&width=256&height=256&project=65b7e1bc1118048ae6a8",
+                            "$id": "65d43eed6bdbed3b3de5",
+                            "$createdAt": "2024-02-20T05:55:57.442+00:00",
+                            "$updatedAt": "2024-02-20T05:55:57.442+00:00",
+                            "$permissions": [],
+                            "$databaseId": "65b90c2224988deb2c25",
+                            "$collectionId": "65b90c66cd384a42aa3a"
+                        },
+                        {
+                            "name": "Gaurav",
+                            "username": "GrvExplorer",
+                            "accountId": "65c0d31e0fe0155aefac",
+                            "email": "icodelife307@gmail.com",
+                            "bio": null,
+                            "imageId": null,
+                            "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=Gaurav&width=256&height=256&project=65b7e1bc1118048ae6a8",
+                            "$id": "65c0d31f2db3e6173cd4",
+                            "$createdAt": "2024-02-05T12:22:55.188+00:00",
+                            "$updatedAt": "2024-02-05T12:22:55.188+00:00",
+                            "$permissions": [],
+                            "$databaseId": "65b90c2224988deb2c25",
+                            "$collectionId": "65b90c66cd384a42aa3a"
+                        }
+                    ],
+                    "save": [],
+                    "$databaseId": "65b90c2224988deb2c25",
+                    "$collectionId": "65e3e8b06c6c46346128"
+                }
+            ],
+            "liked": [
+                {
+                    "caption": "Accusamus est est no",
+                    "tags": [
+                        "Ametnemoestidt"
+                    ],
+                    "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/65b90bcb132b0620aa8b/files/65e3f1b845efe7eebb60/preview?width=2000&height=2000&gravity=top&quality=100&project=65b7e1bc1118048ae6a8",
+                    "imageId": "65e3f1b845efe7eebb60",
+                    "location": "Dolores provident v",
+                    "$id": "65e3f1b91f6888be7f15",
+                    "$createdAt": "2024-03-03T03:42:49.131+00:00",
+                    "$updatedAt": "2024-03-03T03:43:45.229+00:00",
+                    "$permissions": [
+                        "read(\"user:65d43eece127b6722e07\")",
+                        "update(\"user:65d43eece127b6722e07\")",
+                        "delete(\"user:65d43eece127b6722e07\")"
+                    ],
+                    "creator": {
+                        "name": "thapa ",
+                        "username": "thapatech",
+                        "accountId": "65d43eece127b6722e07",
+                        "email": "bipoto2846@massefm.com",
+                        "bio": null,
+                        "imageId": null,
+                        "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=thapa+&width=256&height=256&project=65b7e1bc1118048ae6a8",
+                        "$id": "65d43eed6bdbed3b3de5",
+                        "$createdAt": "2024-02-20T05:55:57.442+00:00",
+                        "$updatedAt": "2024-02-20T05:55:57.442+00:00",
+                        "$permissions": [],
+                        "$databaseId": "65b90c2224988deb2c25",
+                        "$collectionId": "65b90c66cd384a42aa3a"
+                    },
+                    "save": [],
+                    "$databaseId": "65b90c2224988deb2c25",
+                    "$collectionId": "65e3e8b06c6c46346128"
+                }
+            ],
+            "save": [],
+            "$databaseId": "65b90c2224988deb2c25",
+            "$collectionId": "65b90c66cd384a42aa3a"
+        },
+        {
+            "name": "Cain Carver",
+            "username": "grvexplorerlkj",
+            "accountId": "65d3645f4bd178f607f9",
+            "email": "xetek77898@watrf.com",
+            "bio": null,
+            "imageId": null,
+            "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=Cain+Carver&project=65b7e1bc1118048ae6a8",
+            "$id": "65d364602f2b7d0800e0",
+            "$createdAt": "2024-02-19T14:23:28.194+00:00",
+            "$updatedAt": "2024-02-19T14:23:28.194+00:00",
+            "$permissions": [],
+            "posts": [],
+            "liked": [],
+            "save": [],
+            "$databaseId": "65b90c2224988deb2c25",
+            "$collectionId": "65b90c66cd384a42aa3a"
+        },
+        {
+            "name": "Gaurav",
+            "username": "GrvExplorer",
+            "accountId": "65c0d31e0fe0155aefac",
+            "email": "icodelife307@gmail.com",
+            "bio": null,
+            "imageId": null,
+            "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=Gaurav&width=256&height=256&project=65b7e1bc1118048ae6a8",
+            "$id": "65c0d31f2db3e6173cd4",
+            "$createdAt": "2024-02-05T12:22:55.188+00:00",
+            "$updatedAt": "2024-02-05T12:22:55.188+00:00",
+            "$permissions": [],
+            "posts": [],
+            "liked": [
+                {
+                    "caption": "Accusamus est est no",
+                    "tags": [
+                        "Ametnemoestidt"
+                    ],
+                    "imageUrl": "https://cloud.appwrite.io/v1/storage/buckets/65b90bcb132b0620aa8b/files/65e3f1b845efe7eebb60/preview?width=2000&height=2000&gravity=top&quality=100&project=65b7e1bc1118048ae6a8",
+                    "imageId": "65e3f1b845efe7eebb60",
+                    "location": "Dolores provident v",
+                    "$id": "65e3f1b91f6888be7f15",
+                    "$createdAt": "2024-03-03T03:42:49.131+00:00",
+                    "$updatedAt": "2024-03-03T03:43:45.229+00:00",
+                    "$permissions": [
+                        "read(\"user:65d43eece127b6722e07\")",
+                        "update(\"user:65d43eece127b6722e07\")",
+                        "delete(\"user:65d43eece127b6722e07\")"
+                    ],
+                    "creator": {
+                        "name": "thapa ",
+                        "username": "thapatech",
+                        "accountId": "65d43eece127b6722e07",
+                        "email": "bipoto2846@massefm.com",
+                        "bio": null,
+                        "imageId": null,
+                        "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=thapa+&width=256&height=256&project=65b7e1bc1118048ae6a8",
+                        "$id": "65d43eed6bdbed3b3de5",
+                        "$createdAt": "2024-02-20T05:55:57.442+00:00",
+                        "$updatedAt": "2024-02-20T05:55:57.442+00:00",
+                        "$permissions": [],
+                        "$databaseId": "65b90c2224988deb2c25",
+                        "$collectionId": "65b90c66cd384a42aa3a"
+                    },
+                    "save": [],
+                    "$databaseId": "65b90c2224988deb2c25",
+                    "$collectionId": "65e3e8b06c6c46346128"
+                }
+            ],
+            "save": [],
+            "$databaseId": "65b90c2224988deb2c25",
+            "$collectionId": "65b90c66cd384a42aa3a"
+        },
+        {
+            "name": "Cain Carver",
+            "username": "Gaurav ",
+            "accountId": "65c0d16f601f9d692567",
+            "email": "vermajigaurav6+boxio@gmail.com",
+            "bio": null,
+            "imageId": null,
+            "imageUrl": "https://cloud.appwrite.io/v1/avatars/initials?name=Cain+Carver&project=65b7e1bc1118048ae6a8",
+            "$id": "65c0d17091a9ba2e0e7f",
+            "$createdAt": "2024-02-05T12:15:44.597+00:00",
+            "$updatedAt": "2024-02-05T12:15:44.597+00:00",
+            "$permissions": [],
+            "posts": [],
+            "liked": [],
+            "save": [],
+            "$databaseId": "65b90c2224988deb2c25",
+            "$collectionId": "65b90c66cd384a42aa3a"
+        }
+    ]
+}
